@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="source/css/ms.css">
+</head>
+<body>
+<div class="bg">
+</div>
+<div class="main">
+ 	<canvas id="canvas" class="canvas"></canvas>
+	<div class="J_Moon moon">
+		<p>测测你是哪种月饼</p>
+	</div>
+	<p class="content">
+		你以为当初猪八戒没追到嫦娥是因为他丑？其实问题就处在他代表的是韭菜月饼。<br/>
+		道不同不相为谋，味道不同怎么做朋友？<br/>
+		赶快测测你是哪种月饼？看看谁更秀色可餐！
+	</p>
+	<div class="J_StartBtn start-btn">开始测试</div>
+	<div class="bottom"></div>
+</div>
+
+<div class="J_Popup popup hidden">
+	<div class="bgpic"></div>
+	<p>哈哈，中秋佳节怎么能没好礼相送呢？来，快把中秋学习大礼包拿回家。</p>
+	<div class="btn-line">
+		<div class="J_BtnOne btn fl mr">已领</div>
+		<div class="J_BtnTwo btn fl">领取</div>
+	</div>
+	<div class="J_Close close-btn"></div>
+</div>
+
+<script src="source/js/jquery.js"></script>
+<script src="source/js/ms.js"></script>
+<script src="source/js/anime.js"></script>
+<script language="javascript" type="text/javascript">
+    $(function() {
+        $("#canvas").anime({
+            window_width: '720',
+            window_height: '400',
+            window_background: '#291C58',
+            star_count: '100',
+            star_color: '#7265b8',
+            star_depth: '1000'
+        });
+    });
+     
+</script>
+
+</body>
+</html>
